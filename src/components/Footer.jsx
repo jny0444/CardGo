@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <div>
             <footer>
-                <p>© 2024 Card-Go</p>
+                <p className='footer-text'>© 2024 Card-Go</p>
             </footer>
         </div>
     )
