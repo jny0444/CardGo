@@ -1,6 +1,8 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, createContext } from "react";
 import './Header.css';
 import { ethers } from 'ethers';
+
+export const AccountContext = createContext();
 
 const Header = ({ props }) => {
     const [walletStatus, setWalletStatus] = useState('Connect Wallet');
@@ -35,11 +37,12 @@ const Header = ({ props }) => {
                     //     accountInfo
                     // ]);
                     accountInfoArray.push(accountInfo);
-                    console.log(accountInfoArray)
+                    // console.log(accountInfoArray)
+                    setAccount(accountInfoArray);
                 }
                 // console.log(account);
-                setAccount(accountInfoArray);
-                console.log(account)
+                // setAccount(accountInfoArray);
+                // console.log(account)
                 // console.log(balanceEther)
 
                 setWalletStatus("Wallet Connected");
