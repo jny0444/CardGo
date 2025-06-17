@@ -2,19 +2,9 @@
 pragma solidity ^0.8.20;
 
 contract CardGo {
-    struct Card {
-        uint256 id;
-        string name;
-        string description;
-    }
+    
 
-    struct Player {
-        address playerAddress;
-    }
+    function startGame() public {}
 
-    constructor() {}
-
-    function registerPlayer() public {}
-
-    function giveCard() public {}
+    function playCard(uint256 cardId) public {}
 }
